@@ -1,4 +1,4 @@
-# Proyecto de Implementación de Juego Betris
+# Juego Betris
 
 Este proyecto implementa un juego similar a Tetris llamado Betris, donde el objetivo es colocar piezas de formas específicas en un tablero para completar filas sin huecos. El juego utiliza algoritmos de búsqueda de soluciones y manejo de entradas para optimizar la colocación de piezas en el tablero.
 
