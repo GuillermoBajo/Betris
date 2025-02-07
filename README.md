@@ -1,8 +1,8 @@
-# Juego Betris
+# Betris Game
 
-Este proyecto implementa un juego similar a Tetris llamado Betris, donde el objetivo es colocar piezas de formas específicas en un tablero para completar filas sin huecos. El juego utiliza algoritmos de búsqueda de soluciones y manejo de entradas para optimizar la colocación de piezas en el tablero.
+This project implements a Tetris-like game called Betris, where the goal is to place pieces with specific shapes on a board to complete rows without gaps. The game uses solution-searching algorithms and input handling to optimize piece placement on the board.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **C++**: Lenguaje de programación utilizado para implementar el juego.
-- **Backtracking**: Se emplea para buscar soluciones óptimas a la colocación de piezas en el tablero, probando diferentes combinaciones y retrocediendo si se encuentran inconsistencias.
+- **C++**: Programming language used to implement the game.
+- **Backtracking**: Employed to search for optimal solutions for piece placement on the board, testing different combinations and backtracking when inconsistencies are found.
