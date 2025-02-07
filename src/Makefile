@@ -4,23 +4,27 @@
 #------------------------------------------------------------------------------
 
 #---------------------------------------------------------
-# Definición de macros
-CC = g++
-CPPFLAGS = -std=c++11      #opciones de compilación
-LDFLAGS =                      #opciones de linkado
-RM = rm -f                     #comando para borrar ficheros
+# Macro definitions
+CC = g++                 # Compiler
+CPPFLAGS = -std=c++11    # Compilation options
+LDFLAGS =                # Linking options
+RM = rm -f               # Command to remove files
 
 all: mainB
+
 #-----------------------------------------------------------
-# Compilacion
+# Compilation
 mainB.o: mainB.cpp betris.hpp
 	${CC} mainB.cpp -c ${CPPFLAGS}
-# Linkado
+
+# Linking
 betris.o: betris.cpp betris.hpp
 	${CC} betris.cpp -c ${CPPFLAGS}
+
 mainB: mainB.o betris.o
 	${CC} mainB.o betris.o -o mainB ${CPPFLAGS}
-#-----------------------------------------------------------	
-# LIMPIEZA de todo lo generado. Ojo: se borrarán sin preguntar
+
+#-----------------------------------------------------------
+# CLEANING all generated files. Note: They will be deleted without asking
 clean:
 	${RM} mainB.o betris.o
